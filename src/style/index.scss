@@ -1,0 +1,35 @@
+@import 'vendor/normalize';
+@import 'modules/variables';
+@import 'modules/mixins';
+@import 'modules/media-queries';
+@import 'partials/coin-card';
+@import 'partials/modal';
+@import 'partials/coins-section';
+@import 'partials/form-section';
+@import 'partials/loading';
+@import 'partials/footer';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//I'm using css variables instead of scss ones so i can manupulate them with js
+
+body {
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+  color: $dark;
+  @include flex-center;
+}
+.alert {
+  width: 100vw;
+  height: 10vh;
+  font-size: 1.2rem;
+  background: $alert;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: $light;
+  margin-top: 10vh;
+}

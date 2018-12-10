@@ -1,0 +1,9 @@
+.coins-section {
+  width: 100vw;
+  margin-top: 15vh;
+  @include flex-center;
+  @include medium-screen {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+}

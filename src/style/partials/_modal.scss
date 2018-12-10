@@ -1,0 +1,65 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  overflow-x: hidden;
+  position: fixed;
+  background: $light;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  .icon-container {
+    width: 100%;
+    height: 30%;
+    background: $dark;
+    @include flex-center;
+    .icon {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 100%;
+      border: solid 1.8rem $light;
+      padding: 0.7rem;
+    }
+  }
+  .btn-container {
+    height: 5%;
+    width: 100%;
+    background: $dark;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .close-modal-btn {
+      background: $dark;
+      color: $light;
+      border: none;
+      font-size: 1.3rem;
+      padding: 1rem;
+    }
+  }
+  .info-container {
+    font-size: 1.1rem;
+    @include flex-center;
+    h3,
+    p {
+      padding: 0.2rem;
+    }
+  }
+  .coin-stats {
+    list-style: none;
+    @include flex-center;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    .higher {
+      color: $higher;
+    }
+    .lower {
+      color: $alert;
+    }
+
+    li {
+      padding: 0.5rem;
+    }
+  }
+}

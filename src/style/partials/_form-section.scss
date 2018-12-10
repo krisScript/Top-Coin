@@ -1,0 +1,39 @@
+.form-section {
+  width: 100vw;
+  height: 10vh;
+  background: $dark;
+  margin-bottom: 3rem;
+  box-shadow: 10px 5px 25px 10px rgba($dark, 0.3);
+  @include flex-center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    input {
+      height: 2rem;
+      width: 15rem;
+      border: none;
+      background: $light;
+      border-bottom: solid 2px $light;
+      padding: 0.2rem;
+      font-size: 1.2rem;
+    }
+    button {
+      height: 2rem;
+      font-size: 1.2rem;
+      background: none;
+      border: none;
+      color: $light;
+      padding: 0.4rem;
+      &:hover {
+        background: $light;
+        color: $dark;
+      }
+    }
+  }
+}

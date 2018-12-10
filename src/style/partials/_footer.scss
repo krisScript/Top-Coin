@@ -1,0 +1,21 @@
+footer {
+  width: 100vw;
+  height: 20vh;
+  background: $dark;
+ 
+  @include flex-center;
+  .up-btn {
+    background: none;
+    font-size: 2.1rem;
+    border: none;
+    color: $light;
+  }
+  a{
+    width: 100%;
+    text-align: center;
+    img{
+      height: 5rem;
+      width: 15rem;
+    }
+  }
+}
