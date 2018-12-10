@@ -1,4 +1,4 @@
-# Vanilla JS crypto coins searching app
+# Vanilla JS cryptocurrency searching app
 
 App build with vanilla javascript and scss.
 
