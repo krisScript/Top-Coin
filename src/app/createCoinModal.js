@@ -19,7 +19,7 @@ const createCoinModal = coin => {
   </div>
   <ul class="coin-stats">
   <li>${priceData.PRICE}<span class="${
-    priceData.CHANGEPCT24HOUR > 0 ? 'lower' : 'higher'
+    priceData.CHANGEPCT24HOUR > 0 ? 'higher' : 'lower'
   }">(${priceData.CHANGEPCT24HOUR}%)</span></li>
   <li>Market:${priceData.MARKET}</li>
   <li>High 24H:${priceData.HIGH24HOUR}</li>
